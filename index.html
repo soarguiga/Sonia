@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <head>
+    <title>Inicio </title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>             
+                        
+      var imagenes=new Array(
+         'imagenes/1.jpg',
+         'imagenes/2.jpg',
+         'imagenes/3.jpg',
+         'imagenes/4.jpg',
+         'imagenes/6.jpg',
+         'imagenes/7.jpg',
+         'imagenes/8.jpg',
+         'imagenes/9.jpg',
+      );
+   
+     
+      function rotarImagenes()
+      {            
+          var index=Math.floor((Math.random()*imagenes.length));     
+          document.getElementById("imagen").src=imagenes[index];
+      }       
+     
+      onload=function()
+      {             
+          rotarImagenes();      
+         
+          setInterval(rotarImagenes,2000);
+      }    
+      
+            
+  </script>      
+  
+ 
+
+    </head>
+
+
+
+
+
+
+
+ 
+
+  <body>
+    <div class="contenedor_principal">
+    <div class="header">
+      <div class="barra_inicio">
+      <a class="logo" href="galeria.html">
+        <h1 class="logo">El Blog de Sonia</h1>
+        
+        </a>
+      </div>
+    </div>
+    
+    
+    <div class="texto_header">
+      <h2 class="centrar_texto">Mi Viaje por Galicia</h2>
+      <p class="centrar_texto">Uno de los mayores atractivos de Galicia es su naturaleza.</p>
+        <p class="centrar_texto">Tanto en el mar como en la montaña encontramos espacios únicos en los que parece que
+        el tiempo se detiene.</p><p class="centrar_texto"> Aquí tienes algunos de las zonas naturales
+         más impresionantes de esta tierra</p>
+    </div>
+    <div class="navegacion_completa">
+      <nav class="navegacion">
+        <a href="inicio.html">Inicio</a>
+        <a href="orense.html">Ourense</a>
+        <a href="lugo.html">Lugo</a>
+        <a href="pontevedra.html">Pontevedra</a>
+        <a href="coruña.html"> Coruña</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </div>
+<div class="imagen"><img src="" id="imagen"></div>
+
+    
+      
+      <footer class="footer">
+        <div class="contenedor_pie">
+          <div class="barra inicio">
+          <a class="logo" href="galeria.html">
+            <h1 class="logo centrar_texto">El Blog de Sonia</h1>
+            </a>
+            <div class="navegacion_completa">
+            <nav class="navegacion">
+              <a href="inicio.html">Inicio</a>
+              <a href="orense.html">Ourense</a>
+              <a href="lugo.html">Lugo</a>
+              <a href="pontevedra.html">Pontevedra</a>
+              <a href="coruña.html">A Coruña</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
+          </div>
+        </div>
+
+
+
+      </footer>
+
+    
+
+
+
+
+  </body>
+</html>
